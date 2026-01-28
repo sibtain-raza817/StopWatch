@@ -1,18 +1,141 @@
-# React + Vite
+⏱️ React Stopwatch App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean Stopwatch Application built using React Hooks.
+It allows users to start, stop, and reset the timer with accurate time formatting (MM:SS).
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+▶ Start the stopwatch
 
-## React Compiler
+⏸ Stop the stopwatch
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔄 Reset the stopwatch
 
-## Expanding the ESLint configuration
+⏱ Time format in minutes : seconds (MM:SS)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Prevents multiple intervals from running at the same time
 
-# StopWatch
+Clean and responsive UI using external CSS
+
+🛠️ Tech Stack
+
+React.js
+
+JavaScript (ES6)
+
+CSS
+
+React Hooks used:
+
+useState
+
+useRef
+
+useEffect
+
+📂 Project Structure
+src/
+│── App.jsx
+│── App.css
+│── main.jsx
+│── Login.jsx
+
+⚙️ How It Works
+
+useState stores the time value
+
+useRef stores the interval ID to avoid re-rendering
+
+setInterval increases time every second
+
+clearInterval stops the timer
+
+useEffect clears the interval when component unmounts
+
+Time is formatted using a custom formatTime() function
+
+📥 Installation & Run Locally
+
+Clone the repository:
+
+git clone https://github.com/your-username/stopwatch-react.git
+
+
+Go inside the project folder:
+
+cd DAY8
+
+
+Install dependencies:
+
+npm install
+
+
+Run the project:
+
+npm run dev
+
+🎯 Usage
+
+Click Start to begin the stopwatch
+
+Click Stop to pause
+
+Click Reset to reset time to 00:00
+
+🌱 Future Improvements
+
+Add lap functionality
+
+Add dark/light theme
+
+Add sound on start/stop
+
+Mobile animations
+
+🙌 Author
+
+Developed by [Sibtain Raza]
+Learning React step by step 🚀
+
+# LOGIN
+🔐 React Login Form (useRef)
+
+A simple Login Form built using React and useRef Hook to capture user input values without re-rendering the component.
+
+🚀 Features
+
+Email and Password input fields
+
+Uses useRef instead of controlled inputs
+
+Prevents page reload on submit
+
+Clean UI using inline CSS
+
+Logs user credentials to console (for learning purpose)
+
+🛠️ Tech Stack
+
+React.js
+
+JavaScript (ES6)
+
+Inline CSS
+
+React Hooks:
+
+useState
+
+useRef
+
+
+⚙️ How It Works
+
+useRef is used to get values directly from input fields
+
+No re-render happens when user types
+
+handleSubmit() prevents default form submission
+
+On submit, email and password are printed in console
