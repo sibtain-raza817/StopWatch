@@ -41,7 +41,7 @@ function App() {
         <div className="time">{formatTime(time)}</div>
 
         <div className="buttons">
-          <button className="start" onClick={handleStart}>Start</button>
+          <button  className="start" onClick={handleStart}>Start</button>
           <button className="stop" onClick={handleStop}>Stop</button>
           <button className="reset" onClick={handleReset}>Reset</button>
         </div>
